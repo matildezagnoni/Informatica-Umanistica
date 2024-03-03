@@ -160,7 +160,7 @@
       <div id="containerBlog">
         <h5>Blog</h5>
         <h6>Qui potrai raccogliere tutte le tue citazioni musicali preferite: </h6>
-        <div>
+        <div id="cardBlogcontainer">
           <div class="card" style="width: 80vw; margin: 2vh;">
             <h5 class="card-header">Authors</h5>
             <div class="card-body">
@@ -281,7 +281,7 @@
         var foto = document.getElementById('fotoValue').files[0];
 
         
-        var existingComments = document.querySelectorAll('#containerBlog .card').length;
+        var existingComments = document.querySelectorAll('#cardBlogcontainer .card').length;
         var newId = 'segnala' + (existingComments + 1);
         var newComment = document.createElement('div');
         newComment.classList.add('card');
@@ -298,7 +298,7 @@
           </div>
         `;
 
-        var containerBlog = document.getElementById('containerBlog');
+        var containerBlog = document.getElementById('cardBlogcontainer');
         containerBlog.appendChild(newComment);
 
         var reader = new FileReader();

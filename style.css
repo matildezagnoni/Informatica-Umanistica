@@ -97,7 +97,6 @@ h2, h4{
 
 .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -402,7 +401,6 @@ h2, h4{
 
 #ContainerVideo{
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 50%;
   margin-top: 20vh;
@@ -434,6 +432,7 @@ h2, h4{
     margin-top: 10vh;
     max-height: 80vh;
     overflow-y: auto;
+    background-color: #301E67;
 }
 
 
@@ -635,9 +634,17 @@ h2, h4{
     width: 100%;
     flex-direction: column;
     color: white;
-    min-height: 60vh;
+}
+
+#cardBlogcontainer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    max-height: 40vh;
     overflow-y: auto;
-    margin-top: 20vh;
 }
 
 #aggiungiPost{
