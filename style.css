@@ -17,7 +17,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #about {
@@ -53,6 +52,19 @@
     justify-content: center;
     align-items: center;
     height: 500vh;
+}
+
+#music{
+    font-family: Arial, sans-serif;
+    margin-top: 2%;
+    padding: 0;
+    background-image: linear-gradient(to bottom,#03001C, #000000);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 215vh;
 }
 
 header {
@@ -169,14 +181,15 @@ h2, h4{
     position: absolute;
     bottom: 47vh;
     right: 2vw;
+    margin-bottom: 10vh;
 }
 
-#footerBase{
+#footerBase {
     background-color: #301E67;
     color: white;
-    position: absolute;
-    top: 450vh; 
-    height: 50vh;
+    position: relative;
+    bottom: 0;
+    min-height: 50vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -375,16 +388,6 @@ h2, h4{
 
 /* MUSIC */
 
-#ContainerPrincipale{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    flex-direction: row;
-    position: absolute;
-    top: 30vh;
-}
-
 #ContainerLike{
     min-width: 32vw;
     height: 70vh;
@@ -399,27 +402,45 @@ h2, h4{
 }
 
 #ContainerVideo{
-    margin-left: 15vw;
-    width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  top: 35vh;
+  left: 0%;
+  margin-bottom: 30vh;
 }
 
-#AggiungiCommento{
-    width: 100vw;
-    position: absolute;
-    top: 120vh;
-    left: 10vw;
-}
-
-#containerCommenti{
-    width: 100vw;
-    position: absolute;
-    top:140vh;
-    background-color: #301E67;
+#containerPrincipale{
+    margin-top:0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
+
+#AggiungiCommento{
+    width: 100vw;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    
+}
+
+#containerCommenti{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    max-height: 80vh;
+    overflow-y:scroll;
+}
+
 
 #inputText{
     width: 30vw;
@@ -607,4 +628,23 @@ h2, h4{
     #erasTour{
         display: none;
     }
+}
+
+#containerBlog{
+    position: absolute;
+    top: 270vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    min-height: 60vh;
+    overflow-y: auto;
+}
+
+#aggiungiPost{
+    width: 15vw;
+    position: absolute;
+    left: 10vw;
 }

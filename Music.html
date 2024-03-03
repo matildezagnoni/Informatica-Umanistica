@@ -8,280 +8,284 @@
         <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    </head>
+      </head>
 
-    <body id="homePage">
+    <body id="music">
 
     <div id="nav">
 
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="HomePage.html">BeatFlow</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">BeatFlow</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html">LogOut</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="Music.html">Music</a></li>
-                        <li><a class="dropdown-item" href="Artist.html">Artist</a></li>
-                        <li>
-                        <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="About.html">About</a></li>
-                    </ul>
-                    </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
-                </div>
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="HomePage.html">BeatFlow</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">BeatFlow</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="index.html">LogOut</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="Music.html">Music</a></li>
+                      <li><a class="dropdown-item" href="Artist.html">Artist</a></li>
+                      <li>
+                      <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="About.html">About</a></li>
+                  </ul>
+                  </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+              </form>
             </div>
-            </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
     </div>
 
-    <div id="ContainerPrincipale">
+    <div id="containerPrincipale">
 
-        <div id="ContainerVideo">
+      <div id="ContainerVideo">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video style="min-width: 50vw;" class="d-block w-100" controls>
+                <source src="./img/Taylor Swift - Shake It Off.mp4" type="video/mp4">
+                  Your browser does not support HTML video.
+              </video>
+            </div>
 
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <video style="min-width: 50vw;" class="d-block w-100" controls>
-                        <source src="./img/Taylor Swift - Shake It Off.mp4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                  </div>
-                  <div class="carousel-item">
-                    <video style="min-width: 50vw;" class="d-block w-100" controls>
-                        <source src="./img/Adele - Hello (Official Music Video).mp4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                  </div>
-                  <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A?si=XOH6-7qnDcp8oncw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <div class="carousel-item">
+              <video style="min-width: 50vw;" class="d-block w-100" controls>
+                <source src="./img/Adele - Hello (Official Music Video).mp4" type="video/mp4">
+                  Your browser does not support HTML video.
+                </video>
+            </div>
+
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A?si=XOH6-7qnDcp8oncw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+          
+
+
+      <div id="AggiungiCommento">
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" >
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Scrivi Commento</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
 
-        </div>
-
-        <div id="ContainerLike">
-            <h4>Potrebbero interessarti: </h4>
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/lovestory.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Love Story</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/black_space.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blank Space</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/Bad_blood.webp" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Bad Blood</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/Bad_blood.webp" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Bad Blood</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/Bad_blood.webp" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Bad Blood</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/Bad_blood.webp" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Bad Blood</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="width: 25vw; margin: 2vw;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/Bad_blood.webp" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Bad Blood</h5>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div id="AggiungiCommento">
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content" >
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Scrivi Commento</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div id="containerTextFiel">
-                    <input id="inputText"></input>
-                </div>
+              <div id="containerTextFiel">
+                <input type="text" placeholder="inserisci il commento..." id="inputText"></input>
+              </div>
                 
-                <div class="modal-footer">
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Aggiungi</button>
-                </div>
+              <div class="modal-footer">
+                <button onclick="handleAggiungiCommento()" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Aggiungi</button>
               </div>
             </div>
           </div>
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Aggiungi Commento</button>
-    </div>
-    
-
-    <div id="containerCommenti">
-        <div class="card" style="width: 80vw; margin:2vh;">
-            <h5 class="card-header">Authors</h5>
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.</h5>
-              <a href="#" class="btn btn-primary">Segnala</a>
-            </div>
         </div>
-
-        <div class="card" style="width: 80vw;  margin:2vh">
-            <h5 class="card-header">Authors</h5>
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.</h5>
-              <a href="#" class="btn btn-primary">Segnala</a>
-            </div>
-        </div>
-
-    </div>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Aggiungi Commento</button>
+      </div>
       
 
-    <footer id="footerBase">
-      <h4>BeatFlow</h4>
+      <div id="containerCommenti">
+        <div class="card" id="segnala1" style="width: 80vw; margin:2vh;">
+          <h5 class="card-header">Authors</h5>
+          
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.</h5>
+            <button class="btn btn-primary" onclick="handleSegnala('segnala1')">Segnala</button>
+          </div>
+        </div>
 
-      <div id="firstId">
-
-          <h5>Contact Us:</h5>
-          <h6><i class="fas fa-phone-alt"></i> tel: 200 200 200 </h6>
-          <h6><i class="fas fa-fax"></i> fax: 200 200 200 </h6>
-         
+        <div class="card" id="segnala2" style="width: 80vw; margin:2vh;">
+          <h5 class="card-header">Authors</h5>
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.</h5>
+            <button class="btn btn-primary" onclick="handleSegnala('segnala2')">Segnala</button>
+          </div>
+        </div>
       </div>
 
-      <div id="icon">
-          <h5>Follow Us on:</h5>
-          <a href="#" style="margin-right: 2.4vw;"><i class="fab fa-facebook"></i></a>
-          <span></span>
-          <a href="#" style="margin-right: 2.4vw;"><i class="fab fa-instagram"></i></a>
-          <span></span>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-      </div>
-    </footer>
+    
+
+      <footer id="footerBase">
+        <h4>BeatFlow</h4>
+
+        <div id="firstId">
+            <h5>Contact Us:</h5>
+            <h6><i class="fas fa-phone-alt"></i> tel: 200 200 200 </h6>
+            <h6><i class="fas fa-fax"></i> fax: 200 200 200 </h6> 
+        </div>
+
+        <div id="icon">
+            <h5>Follow Us on:</h5>
+            <a href="#" style="margin-right: 2.4vw;"><i class="fab fa-facebook"></i></a>
+            <span></span>
+            <a href="#" style="margin-right: 2.4vw;"><i class="fab fa-instagram"></i></a>
+            <span></span>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Seleziona il pulsante "Aggiungi Commento"
             var addButton = document.querySelector('#AggiungiCommento button[data-bs-target="#exampleModalToggle"]');
-            // Seleziona l'input per il testo del commento
-            var inputText = document.querySelector('#inputText');
-
-            // Quando viene cliccato il pulsante "Aggiungi Commento"
+            var inputText = document.getElementById('inputText');
             addButton.addEventListener('click', function() {
-                // Ottieni il valore dell'input del testo del commento
                 var commentText = inputText.value;
-
-                // Effettua qualche azione con il testo del commento
-                // Ad esempio, puoi visualizzarlo in console
                 console.log('Nuovo commento:', commentText);
-
-                // Cancella il testo dall'input del commento
                 inputText.value = '';
 
-                // Chiudi il modal
                 var modal = document.querySelector('#exampleModalToggle');
                 var modalToggle = bootstrap.Modal.getInstance(modal);
                 modalToggle.hide();
             });
         });
     </script>
-  
+
+    <script>
+      function handleLike() {
+
+          var numberElement = document.getElementById('number');
+          var currentNumber = numberElement.innerText;
+          var currentLikes = parseInt(currentNumber);
+          var newLikes = currentLikes + 1;
+          numberElement.innerText = newLikes;
+      }
+    </script>
   
 
+    <script>
+      function handleDislike() {
+          var numberElement = document.getElementById('number2');
+          var currentNumber = numberElement.innerText;
+          var currentLikes = parseInt(currentNumber);
+          var newLikes = currentLikes + 1;
+          numberElement.innerText = newLikes;
+      }
+    </script>
+
+    <script>
+      function handleSegnala(elementId) {
+          var elementToRemove = document.getElementById(elementId);
+          elementToRemove.remove();
+      }
+    </script>
+
+    
+    <script>
+      function handleAggiungiCommento() {
+         
+          var commentText = document.getElementById('inputText').value;
+          var existingComments = document.querySelectorAll('#containerCommenti .card').length;
+          var newId = 'segnala' + (existingComments + 1);
+          var newComment = document.createElement('div');
+          newComment.classList.add('card');
+          newComment.id = newId; // Assegna l'ID incrementato alla nuova carta
+          newComment.style.width = '80vw';
+          newComment.style.margin = '2vh';
+          newComment.innerHTML = `
+            <h5 class="card-header">Authors</h5>
+            <div class="card-body">
+                <h5 class="card-title">${commentText}</h5>
+                <button class="btn btn-primary" onclick="handleSegnala('${newId}')">Segnala</button>
+            </div>
+          `;
+
+          // Aggiungi l'elemento card al div "containerCommenti"
+          var containerCommenti = document.getElementById('containerCommenti');
+          containerCommenti.appendChild(newComment);
+
+          // Cancella il testo dall'input del commento
+          document.getElementById('inputText').value = '';
+
+          // Chiudi il modal
+          var modal = document.getElementById('exampleModalToggle');
+          var modalInstance = bootstrap.Modal.getInstance(modal);
+          modalInstance.hide();
+      }
+    </script>
+
+    <script>
+      function handleAggiungi() {
+        var commentText = document.getElementById('text').value;
+        var foto = document.getElementById('fotoValue').files[0];
+
+        
+        var existingComments = document.querySelectorAll('#containerBlog .card').length;
+        var newId = 'segnala' + (existingComments + 1);
+        var newComment = document.createElement('div');
+        newComment.classList.add('card');
+        newComment.id = newId;
+        newComment.style.width = '80vw';
+        newComment.style.margin = '2vh';
+        newComment.innerHTML = `
+          <h5 class="card-header">Authors</h5>
+          <div class="card-body">
+            <h5 class="card-title">${commentText}</h5>
+            <img src="" id="image${newId}" class="img-fluid" style="display:none;">
+            <button id="up" onclick="handleLike()" class="btn btn-primary"><i class="fas fa-thumbs-up"></i><h6 id="number">0</h6></button>
+            <button id="down" onclick="handleDislike()" class="btn btn-primary"><i class="fas fa-thumbs-down"></i><h6 id="number2">0</h6></button>
+          </div>
+        `;
+
+        var containerBlog = document.getElementById('containerBlog');
+        containerBlog.appendChild(newComment);
+
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var image = document.getElementById('image' + newId);
+            image.src = e.target.result;
+            image.style.display = 'block';
+            image.style.width = '20%'; // Imposta la larghezza dell'immagine al 50%
+        };
+        reader.readAsDataURL(foto);
+
+        // Cancella il testo dall'input del commento e dall'input dell'immagine
+        document.getElementById('text').value = '';
+        document.getElementById('fotoValue').value = '';
+
+        // Chiudi il modal
+        var modal = document.getElementById('citazione');
+        var modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+      }
+    </script>
 
     </body>
 </html>
