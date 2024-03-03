@@ -65,15 +65,15 @@
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/nfWlot6h_JM?si=HDNU2maz7s0tc_Hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/nfWlot6h_JM?si=HDNU2maz7s0tc_Hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <div class="carousel-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/4NRXx6U8ABQ?si=1IhHmRU42IcRvbNR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4NRXx6U8ABQ?si=1IhHmRU42IcRvbNR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <div class="carousel-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A?si=XOH6-7qnDcp8oncw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A?si=XOH6-7qnDcp8oncw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -136,7 +136,7 @@
 
       
       <div id="aggiungiPost">
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citazione"><h6>Aggiungi Citazione</h6></button>   
+        <button id="btnCitazione" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citazione"><h6>Aggiungi Citazione</h6></button>   
           <div class="modal fade" id="citazione" aria-hidden="true" aria-labelledby="FotoButton" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
@@ -159,7 +159,7 @@
       
       <div id="containerBlog">
         <h5>Blog</h5>
-        <h6>Qui potrai raccogliere tutte le tue citazioni musicali preferite: </h6>
+        <h6 id="qui">Qui potrai raccogliere tutte le tue citazioni musicali preferite: </h6>
         <div id="cardBlogcontainer">
           <div class="card" style="width: 80vw; margin: 2vh;">
             <h5 class="card-header">Authors</h5>
@@ -176,12 +176,14 @@
     
 
       <footer id="footerBase">
-        <h4>BeatFlow</h4>
+        <h4 id="beat">BeatFlow</h4>
 
         <div id="firstId">
+
             <h5>Contact Us:</h5>
             <h6><i class="fas fa-phone-alt"></i> tel: 200 200 200 </h6>
-            <h6><i class="fas fa-fax"></i> fax: 200 200 200 </h6> 
+            <h6><i class="fas fa-fax"></i> fax: 200 200 200 </h6>
+           
         </div>
 
         <div id="icon">
