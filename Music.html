@@ -17,7 +17,7 @@
 
       <nav class="navbar navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
-          <a class="navbar-brand" href="HomePage.html">BeatFlow</a>
+            <p class="togheter"><a class="navbar-brand" href="HomePage.html">BeatFlow</a><img id="logo" src="./img/logo.png" alt=""></p>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -134,6 +134,45 @@
         </div>
       </div>
 
+      
+      <div id="aggiungiPost">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citazione"><h6>Aggiungi Citazione</h6></button>   
+          <div class="modal fade" id="citazione" aria-hidden="true" aria-labelledby="FotoButton" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="citazione">Aggiungi Citazione</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="containerTextFiel">
+                  <input id="text" type="text" placeholder="inserisci testo..."></input>
+                  <input id="fotoValue" type="file"></input>
+                </div>
+                <div class="modal-footer">
+                  <button id="foto" onclick="handleAggiungi()" class="btn btn-primary">Carica</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      
+      <div id="containerBlog">
+        <h5>Blog</h5>
+        <h6>Qui potrai raccogliere tutte le tue citazioni musicali preferite: </h6>
+        <div>
+          <div class="card" style="width: 80vw; margin: 2vh;">
+            <h5 class="card-header">Authors</h5>
+            <div class="card-body">
+              <h5 class="card-title">"AND THE FIRST NIGHT THAT YOU SAW ME. NOTHING WAS GONNA STOP ME."</h5>
+              <button id="up" onclick="handleLike()" class="btn btn-primary"><i class="fas fa-thumbs-up"></i><h6 id="number">0</h6></button>
+              <button id="down" onclick="handleDislike()" class="btn btn-primary"><i class="fas fa-thumbs-down"></i><h6 id="number2">0</h6></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
     
 
       <footer id="footerBase">
@@ -225,7 +264,6 @@
           // Aggiungi l'elemento card al div "containerCommenti"
           var containerCommenti = document.getElementById('containerCommenti');
           containerCommenti.appendChild(newComment);
-          containerCommenti.scrollTop = container.scrollHeight;
 
           // Cancella il testo dall'input del commento
           document.getElementById('inputText').value = '';

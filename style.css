@@ -64,7 +64,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 215vh;
+    height: 320vh;
 }
 
 header {
@@ -91,8 +91,7 @@ h2, h4{
 }
 
 #logo {
-    height: 7vh;
-    width: 4vw;
+    width: 7%;
 }
 
 
@@ -406,10 +405,7 @@ h2, h4{
   justify-content: center;
   align-items: center;
   width: 50%;
-  position: relative;
-  top: 35vh;
-  left: 0%;
-  margin-bottom: 30vh;
+  margin-top: 20vh;
 }
 
 #containerPrincipale{
@@ -432,13 +428,12 @@ h2, h4{
 #containerCommenti{
     width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 5vh;
     margin-top: 10vh;
     max-height: 80vh;
-    overflow-y:scroll;
+    overflow-y: auto;
 }
 
 
@@ -628,23 +623,25 @@ h2, h4{
     #erasTour{
         display: none;
     }
+
+    #logo{
+        width: 4%;
+    }
 }
 
 #containerBlog{
-    position: absolute;
-    top: 270vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     flex-direction: column;
     color: white;
     min-height: 60vh;
     overflow-y: auto;
+    margin-top: 20vh;
 }
 
 #aggiungiPost{
-    width: 15vw;
-    position: absolute;
-    left: 10vw;
+    width: 100vw;
+    margin-left: 20vw;
+    margin-top: 10vh;
 }
