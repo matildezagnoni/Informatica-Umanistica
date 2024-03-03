@@ -225,6 +225,7 @@
           // Aggiungi l'elemento card al div "containerCommenti"
           var containerCommenti = document.getElementById('containerCommenti');
           containerCommenti.appendChild(newComment);
+          containerCommenti.scrollTop = container.scrollHeight;
 
           // Cancella il testo dall'input del commento
           document.getElementById('inputText').value = '';
