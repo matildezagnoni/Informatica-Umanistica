@@ -18,9 +18,11 @@
       <nav class="navbar navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
             <p class="togheter"><a class="navbar-brand" href="HomePage.html">BeatFlow</a><img id="logo" src="./img/logo.png" alt=""></p>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
+      
           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
               <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">BeatFlow</h5>
@@ -58,6 +60,15 @@
       </nav>
 
     </div>
+
+    <div id="breadcrumbMusic">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="HomePage.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="Music.html">Music</a></li>
+      </ol>
+    </div>
+
+    <button class="scroll-up-button" ><i class="fas fa-chevron-up"></i></button>
 
     <div id="containerPrincipale">
 
@@ -326,6 +337,21 @@
 
       }
     </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const scrollUpButtons = document.querySelectorAll('.scroll-up-button');
+          scrollUpButtons.forEach(button => {
+              button.addEventListener('click', function() {
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth' // Aggiungi uno scorrimento fluido
+                  });
+              });
+          });
+      });
+    </script>
+
 
     </body>
 </html>

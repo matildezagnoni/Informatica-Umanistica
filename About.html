@@ -13,6 +13,81 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDGy4rNy0DqxfS-F_6Q0Hpkl0yGTEAQnA&libraries=places&callback=initMap" async defer></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            border-radius: 10px;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #301E67;
+            position: absolute;
+            top: 10%;
+            left:25%;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #301E67;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        input[type=text], select {
+            width: 70%;
+            padding: 12px;
+            border: none;
+            border-bottom:1px solid #301E67;
+            background-color: transparent;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #100d1c3f;
+            padding: 20px;
+            width: 100%;
+            color:white;
+        }
+        </style>
     </head>
 
     <body id="about">
@@ -63,27 +138,83 @@
 
     </div>
 
+
+    <div id="breadcrumbAbout">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="HomePage.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="About.html">About</a></li>
+        </ol>
+    </div>
+
     <div id="d1" class="description">
        
-        <p id="labelPop">BeatFlow è un'azienda giovane e innovativa con sede a Bologna, fondata nel corrente anno. Ci impegniamo nel fornire agli appassionati di musica pop la possibilità di ascoltare e commentare le migliori hit del momento.</p>
-        
-        <img id="imgPopArt" src="./img/popArt.jpg">
+            <h2 style="text-align: center;">Benvenuti su BeatFlow!</h2>
+
+            <br>
+
+            <p>BeatFlow è molto più di una semplice piattaforma di musica pop. Siamo un'azienda giovane e innovativa con sede a Bologna. Ci impegniamo a fornire agli appassionati di musica pop l'opportunità di ascoltare, scoprire e commentare le migliori hit del momento.</p>
+
+            <br>
+
+            <p>💡 Missione e Visione
+
+            Presso BeatFlow, crediamo che la musica sia una forma d'arte che unisce le persone e suscita emozioni. La nostra piattaforma è progettata per offrire un'esperienza coinvolgente e interattiva per gli amanti della musica pop.</p>
+
+            <br>
+
+            <p>🌍 La nostra passione per la musica
+
+            Siamo appassionati e dedicati nel portare la gioia della musica alle persone di tutto il mondo. Con il nostro team di esperti e l'utilizzo delle più recenti tecnologie, vogliamo creare un ambiente in cui la musica possa fluire liberamente e ispirare tutti coloro che ci seguono.</p>
+
+            <br>
+
+            <p>🎉 Esperienza utente coinvolgente
+
+            Nel nostro sito web, puoi commentare le tue canzoni preferite e pubblicare le tue citazioni preferite, mettendo mi piace e non mi piace. La tua voce conta e vogliamo rendere il tuo viaggio musicale il più coinvolgente possibile.</p>
+
+            <br>
+
+            <p>🚀 Vieni a unirti a noi!
+
+            Entra a far parte della nostra community e vivi l'emozione della musica pop come mai prima d'ora! Scopri, connettiti e condividi la tua passione per la musica con BeatFlow.</p>
+
+            <br>
 
     </div>
-
-    <div id="d2" class="description">
-        <p id="labelPop2">Presso BeatFlow, crediamo che la musica sia una forma d'arte che unisce le persone e suscita emozioni. La nostra piattaforma è progettata per offrire un'esperienza coinvolgente e interattiva per gli amanti della musica pop.</p>
-
-        <img id="imgStory" src="./img/t.png">
-    </div>
-
-    <div id="d3" class="description">
-        <p id="labelPop3">Siamo appassionati e dedicati nel portare la gioia della musica alle persone di tutto il mondo. Con il nostro team di esperti e l'uso delle più recenti tecnologie, vogliamo creare un ambiente in cui la musica possa fluire liberamente e ispirare tutti coloro che ci seguono.</p>
-    </div>
-
 
     <div id="map">
 
+    </div>
+    
+    <div id="contactUs">
+        <button id="buttonContactUs" onclick="document.getElementById('id02').style.display='block'"><i class="fas fa-user"></i></button>
+    </div>
+    
+    <div class="modal" id="id02">
+        <form style="width: 50%;" class="modal-content animate" action="About.html" method="post">
+            <div class="imgcontainer">
+                <span class="close" onclick="document.getElementById('id02').style.display='none'" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <h3>Contact Form</h3>
+
+                <div>
+                    <form action="/About.html">
+
+                        <label for="fname">First Name <input type="text" id="fname" name="firstname" placeholder="Your name.."></label>
+                        
+
+                        <label for="lname">Last Name  <input type="text" id="lname" name="lastname" placeholder="Your last name.."></label>
+                       
+
+                        <label for="subject">Subject  <input type="text" id="lname" name="lastname" placeholder="Write something.."></label>
+                       
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </form>
     </div>
     
 
@@ -123,6 +254,14 @@
                 title: 'Bologna Centro'
             });
         }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('id02');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
 
     </script>
 

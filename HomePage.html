@@ -24,6 +24,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="margin-bottom: 2.5vh;">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">BeatFlow</h5>
@@ -59,16 +61,41 @@
             </div>
             </div>
         </nav>
-
     </div>
 
-    <div id="introduction">
+    
+
+    <button class="scroll-up-button" ><i class="fas fa-chevron-up"></i></button>
+
+    <div id="introduction" class="animate">
         <h2>
             BeatFlow
         </h2>
-        <p>
+        <p id="scopri">
             scopri le nuove canzoni dei più grandi cantanti pop del momento!
         </p>
+
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <button class="openBtn" onclick="openSearch()"><i id="searchicon" class="fas fa-search"></i>Open Search Box</button>
+
+        <script>
+        function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
     </div>
 
 
@@ -129,13 +156,14 @@
 
 
     <div id="Registrati">
-        <div>
+        <div id="cr">
             <p id="regLabel" class="animate">Registrati subito al sito</p>
             <p id="subitoLabel" class="animate">per ottenere informazioni su tutte le nuove canzoni e per interagire con noi!</p>
             <div id="infoLabel" class="animate">
                 <p style="width: 80vw; font-size: 15px;"><i class="fas fa-heart"></i> Metti mi piace ai video!</p>
                 <p style="width: 80vw; font-size: 15px;"><i class="fas fa-download"></i> Scarica i tuoi video preferiti</p>
-                <p style="width: 80vw; font-size: 15px;"><i class="fas fa-comment"></i> Commenta tutti e pubblica citazioni!</p>
+                <p style="width: 80vw; font-size: 15px;"><i class="fas fa-comment"></i> Commenta e pubblica citazioni!</p>
+                <a id="hello" class="buttonFile" href="index.html">Registrati</a>
             </div>
         </div>        
     </div>
@@ -162,6 +190,19 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollUpButtons = document.querySelectorAll('.scroll-up-button');
+            scrollUpButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth' // Aggiungi uno scorrimento fluido
+                    });
+                });
+            });
+        });
+    </script>
 
     </body>
 </html>
