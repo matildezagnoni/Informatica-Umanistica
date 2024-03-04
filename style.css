@@ -55,7 +55,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 490vh;
+    height: 600vh;
 }
 
 #music{
@@ -75,7 +75,7 @@
     color: white;
     text-align: center;
     margin-bottom: 10vh;
-    margin-top: 200vh;
+    margin-top: 80vh;
     width: 80vw;
 }
 
@@ -293,7 +293,7 @@ h2, h4{
     padding-top: 10vh;
     padding-bottom: 10vh;
     text-align: justify;
-    width: 100vw;
+    width: 100%;
     padding-left: 10vw;
     margin-top: 10vh;
     margin-bottom: 30vh;
