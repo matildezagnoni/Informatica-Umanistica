@@ -161,16 +161,18 @@
         <h5>Blog</h5>
         <h6 id="qui">Qui potrai raccogliere tutte le tue citazioni musicali preferite: </h6>
         <div id="cardBlogcontainer">
-          <div class="card" style="width: 80vw; margin: 2vh;">
-            <h5 class="card-header">Authors</h5>
-            <div class="card-body">
-              <h5 class="card-title">"AND THE FIRST NIGHT THAT YOU SAW ME. NOTHING WAS GONNA STOP ME."</h5>
-              <button id="up" onclick="handleLike()" class="btn btn-primary"><i class="fas fa-thumbs-up"></i><h6 id="number">0</h6></button>
-              <button id="down" onclick="handleDislike()" class="btn btn-primary"><i class="fas fa-thumbs-down"></i><h6 id="number2">0</h6></button>
+            <div class="card" style="width: 80vw; margin: 2vh;">
+                <h5 class="card-header">Authors</h5>
+                <div class="card-body">
+                    <h5 class="card-title">"AND THE FIRST NIGHT THAT YOU SAW ME. NOTHING WAS GONNA STOP ME."</h5>
+                    <img src="" id="image1" class="img-fluid" style="display:none;">
+                    <button id="up_1" onclick="handleLike('1')" class="btn btn-primary"><i class="fas fa-thumbs-up"></i><h6 id="number_1">0</h6></button>
+                    <button id="down_1" onclick="handleDislike('1')" class="btn btn-primary"><i class="fas fa-thumbs-down"></i><h6 id="number2_1">0</h6></button>
+                </div>
             </div>
-          </div>
         </div>
       </div>
+    
       
 
     
@@ -215,24 +217,24 @@
     </script>
 
     <script>
-      function handleLike() {
 
-          var numberElement = document.getElementById('number');
-          var currentNumber = numberElement.innerText;
-          var currentLikes = parseInt(currentNumber);
-          var newLikes = currentLikes + 1;
-          numberElement.innerText = newLikes;
+      function handleLike(commentId) {
+        var numberElement = document.getElementById('number_' + commentId);
+        var currentNumber = numberElement.innerText;
+        var currentLikes = parseInt(currentNumber);
+        var newLikes = currentLikes + 1;
+        numberElement.innerText = newLikes;
       }
     </script>
   
 
     <script>
-      function handleDislike() {
-          var numberElement = document.getElementById('number2');
-          var currentNumber = numberElement.innerText;
-          var currentLikes = parseInt(currentNumber);
-          var newLikes = currentLikes + 1;
-          numberElement.innerText = newLikes;
+      function handleDislike(commentId) {
+        var numberElement = document.getElementById('number2_' + commentId);
+        var currentNumber = numberElement.innerText;
+        var currentLikes = parseInt(currentNumber);
+        var newLikes = currentLikes + 1;
+        numberElement.innerText = newLikes;
       }
     </script>
 
@@ -295,10 +297,11 @@
           <div class="card-body">
             <h5 class="card-title">${commentText}</h5>
             <img src="" id="image${newId}" class="img-fluid" style="display:none;">
-            <button id="up" onclick="handleLike()" class="btn btn-primary"><i class="fas fa-thumbs-up"></i><h6 id="number">0</h6></button>
-            <button id="down" onclick="handleDislike()" class="btn btn-primary"><i class="fas fa-thumbs-down"></i><h6 id="number2">0</h6></button>
+            <button id="up_${newId}" onclick="handleLike('${newId}')" class="btn btn-primary"><i class="fas fa-thumbs-up"></i><h6 id="number_${newId}">0</h6></button>
+            <button id="down_${newId}" onclick="handleDislike('${newId}')" class="btn btn-primary"><i class="fas fa-thumbs-down"></i><h6 id="number2_${newId}">0</h6></button>
           </div>
         `;
+
 
         var containerBlog = document.getElementById('cardBlogcontainer');
         containerBlog.appendChild(newComment);
@@ -317,9 +320,10 @@
         document.getElementById('fotoValue').value = '';
 
         // Chiudi il modal
-        var modal = document.getElementById('citazione');
-        var modalInstance = bootstrap.Modal.getInstance(modal);
+        var modalButton = document.getElementById('btnCitazione');
+        var modalInstance = bootstrap.Modal.getInstance(modalButton);
         modalInstance.hide();
+
       }
     </script>
 
