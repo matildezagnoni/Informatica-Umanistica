@@ -181,7 +181,7 @@ h2, h4{
     position: relative;
     bottom: 0;
     min-height: 50vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,7 +399,7 @@ h2, h4{
   display: flex;
   align-items: center;
   width: 50%;
-  margin-top: 20vh;
+  margin-top: 40vh;
 }
 
 #containerPrincipale{
@@ -413,14 +413,13 @@ h2, h4{
 }
 
 #AggiungiCommento{
-    width: 100vw;
-    margin-left: 20vw;
-    margin-top: 10vh;
-    
+    width: 30%;
+    margin-right: 50vw;
+    margin-top: 10vh; 
 }
 
 #containerCommenti{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -442,6 +441,7 @@ h2, h4{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border:10px solid red;
 }
 
 #vitaTaylor{
@@ -528,7 +528,7 @@ h2, h4{
         justify-content: center;
         align-items: center;
         width: 80%;
-        margin-top: 20vh;
+        margin-top: 50vh;
     }
 
     .video {
@@ -665,23 +665,24 @@ h2, h4{
     width: 100%;
     flex-direction: column;
     color: white;
+    margin-bottom: 5vh;
 }
 
 #cardBlogcontainer{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 5vh;
-    margin-top: 10vh;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
     max-height: 40vh;
     overflow-y: auto;
 }
 
 #aggiungiPost{
-    width: 100vw;
-    margin-left: 20vw;
-    margin-top: 10vh;
+    width: 30%;
+    margin-right: 50vw;
+    margin-top: 15vh;
 }
 
 .buttonFile {
