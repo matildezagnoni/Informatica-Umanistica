@@ -137,14 +137,14 @@
                                   <label for="inputPath" class="form-label">Inserisci il path del video o dell'immagine:</label>
                                   <input type="text" class="form-control" id="inputPath" placeholder="Es. https://www.example.com/video.mp4">
                               </div>
-                              <button type="submit" class="btn btn-primary">Download</button>
+                              <button type="submit" id="avviaDownload" class="btn btn-primary">Avvia</button>
                           </form>
                       </div>
                   </div>
               </div>
           </div>
           <button style="margin-top: 5vh;" class="btn btn-primary" data-bs-target="#download" data-bs-toggle="modal">Download</button>
-        </div>
+        </div>      
 
       </div>
 
@@ -349,12 +349,45 @@
               button.addEventListener('click', function() {
                   window.scrollTo({
                       top: 0,
-                      behavior: 'smooth' // Aggiungi uno scorrimento fluido
+                      behavior: 'smooth' 
                   });
               });
           });
       });
     </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('downloadForm').addEventListener('submit', function(e) {
+              e.preventDefault(); // Previeni il comportamento predefinito del modulo di invio
+              
+              // Ottieni il valore dell'input del path del video o dell'immagine
+              var inputPath = document.getElementById('inputPath').value;
+              
+              // Crea un link temporaneo per avviare il download
+              var downloadLink = document.createElement('a');
+              downloadLink.href = inputPath;
+              downloadLink.download = 'file'; // Assegna un nome di default al file da scaricare
+              
+              // Aggiungi il link temporaneo alla pagina e simula un clic per avviare il download
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+              document.body.removeChild(downloadLink); // Rimuovi il link temporaneo dalla pagina dopo il download
+          });
+
+          // Aggiungi un gestore di eventi al pulsante "Avvia" per avviare il download
+          document.getElementById('avviaDownload').addEventListener('click', function(e) {
+              // Preveniamo il comportamento predefinito del link
+              e.preventDefault();
+
+              // Triggeriamo il submit del form
+              document.getElementById('downloadForm').submit();
+          });
+      });
+    </script>
+
+
+
 
 
     </body>
