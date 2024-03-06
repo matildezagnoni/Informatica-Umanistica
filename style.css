@@ -724,6 +724,11 @@ h2, h4{
         width: 95%;
     }
 
+    .scroll-up-button{
+        width: 17%;
+      }
+
+    
     #scopri{
         width: 80%;
     }
@@ -750,7 +755,7 @@ h2, h4{
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 7vh;
+        margin-top: 0vh;
     }
 
     #vitaTaylor{
@@ -847,6 +852,20 @@ h2, h4{
         width: 100%;
     }
 
+    #containerCitazione{
+        width: 100vw;
+    }
+
+    #paragraph{
+        width: 80vw;
+        position: relative;
+        right:30vw;
+    }
+
+    #paragraph2{
+        display: none;
+    }
+
     #map{
         margin-top: 20vh;
         height: 70vh;
@@ -876,6 +895,10 @@ h2, h4{
     #hello {
         width: 60%;
         margin-left: 15vw;
+    }
+
+    #myInput {
+        width: 100%;
     }
 }
 
