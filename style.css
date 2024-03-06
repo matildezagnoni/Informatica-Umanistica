@@ -984,7 +984,7 @@ h2, h4{
 }
 
 #WebProjectPlan{
-    width: 250vh;
+    height: 250vh;
     width: 100%;
     background-image: linear-gradient(to bottom,#03001C, #000000);
     color: white;
