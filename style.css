@@ -919,7 +919,8 @@ h2, h4{
 }
 
 #myInput {
-    color: white;
+    background-color: white;
+    color: black;
     padding: 14px 20px;
     border: none;
     cursor: pointer;
