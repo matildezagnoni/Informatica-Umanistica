@@ -43,6 +43,7 @@
     padding-left: 5vw;
 }
 
+
 #vita {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -984,7 +985,7 @@ h2, h4{
 }
 
 #WebProjectPlan{
-    height: 250vh;
+    height: 280vh;
     width: 100%;
     background-image: linear-gradient(to bottom,#03001C, #000000);
     color: white;
